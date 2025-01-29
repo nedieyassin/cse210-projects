@@ -8,21 +8,27 @@ public class Reference
     public Reference(string book, int chapter, int verse)
     {
 
-
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = -1;
     }
 
     public Reference(string book, int chapter, int verse, int endVerse)
     {
 
-
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _endVerse = endVerse;
     }
 
 
 
     public string GetDisplayText()
     {
-
-        return "";
+        string endVerse = _endVerse == -1 ? "" : $"-{_endVerse}";
+        return $"{_book} {_chapter}:{_verse}{endVerse}";
     }
 
 
