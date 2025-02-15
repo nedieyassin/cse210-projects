@@ -1,5 +1,5 @@
 using System;
-// Adding more meaningful animations for the breathing process.
+// To exceed requirement i added more meaningful animations for the breathing process.
 class Program
 {
     static void Main(string[] args)
