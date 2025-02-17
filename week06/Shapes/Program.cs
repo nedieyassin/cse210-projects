@@ -4,6 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Shapes Project.");
+        List<Shape> shapes = new List<Shape>();
+
+        shapes.Add(new Square("Red", 20));
+        shapes.Add(new Rectangle("Green", 15, 20));
+        shapes.Add(new Circle("Blue", 10));
+
+
+        foreach (var shape in shapes)
+        {
+            Console.WriteLine($"{shape.GetColor()} {shape.GetArea()}");
+        }
+
+
     }
 }

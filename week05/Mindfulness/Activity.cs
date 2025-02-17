@@ -63,3 +63,53 @@ public class Activity
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// public class Activity
+// {
+//     protected string _name;
+//     protected string _description;
+//     protected int _duration;
+
+//     public Activity(string name, string description, int duration)
+//     {
+//         _name = name;
+//         _description = description;
+//         _duration = duration;
+//     }
+
+//     public void DisplayStartingMessage()
+//     {
+//         Console.WriteLine($"Starting activity: {_name}");
+//     }
+
+//     public void DisplayEndingMessage()
+//     {
+//         Console.WriteLine($"You completed the activity: {_name}");
+//     }
+// }
+
+// public class BreathingActivity : Activity
+// {
+//     public BreathingActivity(string name, string description, int duration) : base(name, description, duration) {}
+
+//     public void Run()
+//     {
+//         DisplayStartingMessage();
+//         // Breathing logic here
+//         DisplayEndingMessage();
+//     }
+// }
